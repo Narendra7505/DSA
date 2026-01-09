@@ -10,9 +10,6 @@ public:
         reversedHalf = reversedHalf * 10 + x % 10;
         x /= 10;
     }
-
-    // For even digits: x == reversedHalf
-    // For odd digits: x == reversedHalf / 10
     return (x == reversedHalf || x == reversedHalf / 10);
     }
 };
